@@ -1,5 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
 /* Navigation styles */
+
+
+.logo {
+    backgrounud: white;
+    height: 230px;
+    background-image: url("../images/jakes-logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.nav {
+    display: flex;
+    background-color: black;
+    padding: 20px;
+}
+
+.left, .center, .right {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left, .right {
+    width: 25%
+}
+
+.center {
+    width: 50%;
+}
+
+.center a {
+    color: white;
+    padding: 10px;
+    font-size: 10px;
+    text-decoration: none;
+    font-family: Arial;
+}
+
+button {
+    color: black;
+    font-size: 16px;
+    padding: 15px;
+    width: 50%;
+}
+
+.left button {
+    background-color: skyblue;
+}
+
+.right button {
+    background-color: yellow;
+}
 
 /* Column styles */
 
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+}
+
+.column {
+    display: flex;
+    height: 1200px;
+    width: 800px;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.meal1, .meal2, .meal3 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.meal1 {
+    margin-top: 20px;
+    background-image: url("../images/soup.png");
+}
+
+.meal2 {
+    background-image: url("../images/cheesecake.png");
+}
+
+.meal3 {
+    background-image: url("../images/cheesecake.png");
+}
+
+.text {
+    background: rgb(0,0,0,0.7);
+    width: 100%;
+    padding: 20px 40px;
+    color: white;
+}
+
 /* Footer Styles */
+
+.footer {
+    background-color: black;
+    width: 100%; 
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.footer-nav {
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 14px; 
+}
+.fb {
+    color: lightblue;
+    text-decoration: none;
+    font-family: Arial;
+}
+
+.tw {
+    color: yellow;
+    text-decoration: none;
+    font-family: Arial;
+}
+
+.ig {
+    color: Red;
+    text-decoration: none;
+    font-family: Arial;
+}
