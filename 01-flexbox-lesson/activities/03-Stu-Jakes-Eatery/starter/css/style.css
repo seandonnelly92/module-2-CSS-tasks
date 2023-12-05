@@ -1,3 +1,6 @@
+/* I added this universal code because the footer had 
+white space around it originally, presumably by default*/
+
 * {
     margin: 0;
     padding: 0;
