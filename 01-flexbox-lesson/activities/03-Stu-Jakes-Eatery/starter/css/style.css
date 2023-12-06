@@ -123,20 +123,22 @@ h1 {
     justify-content: space-evenly;
     font-size: 14px; 
 }
-.fb {
-    color: lightblue;
+
+.footer a {
     text-decoration: none;
     font-family: Arial;
+}
+
+.fb {
+    color: lightblue;
 }
 
 .tw {
     color: yellow;
-    text-decoration: none;
-    font-family: Arial;
+
 }
 
 .ig {
     color: Red;
-    text-decoration: none;
-    font-family: Arial;
+
 }
