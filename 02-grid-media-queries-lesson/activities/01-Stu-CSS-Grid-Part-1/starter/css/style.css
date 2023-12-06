@@ -4,9 +4,63 @@ body {
 
 /* Grid CSS */
 
+#heroGrid {
+  /* Grid size properties */ 
+  margin: 0px 5%;
+  display: grid; 
+  min-height: 500px;
+  height: 70vh; 
+  
+  /* Grid structure properties */
+
+  grid-template-rows: 75% 25%;
+  grid-template-columns: 3fr 1fr; /* this is fraction and means the same as 75% 25% */
+  grid-template-areas:
+    "featuredProduct secondaryProduct"
+    "featuredProduct CTA" ;
+  background-image: url(../images/furniture1\ 3.jpg);
+
+}
+
+#featuredProduct {
+  grid-area: featuredProduct; 
+  background-image: url(../images/furniture1\ 3.jpg);
+}
+
+#secondaryProduct {
+  grid-area: secondaryProduct;
+  background-image: url(../images/furniture2\ 2.png);
+}
+
+#CTA {
+  grid-area: CTA; 
+  cursor: pointer;
+  background-image: url(../images/woodbg.png);
+  justify-content: space-between;
+  padding: 10%;
+}
+
+.heroGridArea {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+#headline {
+  padding: 20px;
+  border-bottom: 5px solid #FF6200; 
+  background-color: rgba(255, 255, 255, 0.8);
+  position: absolute; 
+  top: 15%;
+  right: -5%;
+  z-index: 1;
+}
+
 
 /* Category Grid CSS */
-
 
 
 
