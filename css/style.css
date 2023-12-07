@@ -1,6 +1,32 @@
-body {
-  font-family: 'Poppins', sans-serif;
+/* GENERAL RULES /* 
+
+/* Colour Palette (Variables) */
+
+:root { 
+  --dark: #527853;
+  --cream: #F9E8D9;
+  --organge: #F7B787;
+  --links: #EE7214;
+  --slateGreen: #363e36; 
 }
+
+/*Fonts*/
+
+h1, h2, h3, h4 {
+  font-family: Times, sans-serif;
+  color: var(--dark)
+}
+
+p {
+  font-family: Arial, sans-serif;
+  color: var(--slateGreen)
+}
+
+
+#light {
+  color: var(--cream)
+}
+
 
 /* Grid CSS */
 
