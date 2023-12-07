@@ -69,6 +69,29 @@ footer {
 }
 
 /* TODO: Add code here to select all <a> elements that link to a file with a `.css` extension */
+/* Adding content after an element */ 
+
+
+
+
+
+a[href$=".css"]::after {
+  content: "📝";
+  text-decoration: none; /* Prevent underlining */
+  display: inline-block; /* Ensure proper spacing */
+  margin-left: 2px;
+}
+
+/* Adding content  before an element */ 
+
+h1::before {
+  content: "👋";
+  margin-right: 8px;
+
+}
+
+
+
 
 @media screen and (max-width: 768px) {
   header {
