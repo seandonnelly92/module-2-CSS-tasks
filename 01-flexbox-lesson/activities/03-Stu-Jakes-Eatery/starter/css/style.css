@@ -41,7 +41,7 @@ white space around it originally, presumably by default*/
 .center a {
     color: white;
     padding: 10px;
-    font-size: 10px;
+    font-size: 16px;
     text-decoration: none;
     font-family: Arial;
 }

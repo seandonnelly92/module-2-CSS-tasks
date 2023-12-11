@@ -10,18 +10,17 @@
     --slateGreen: #363e36; 
   }
 
-
-/* Removing default margin */
   * {
-    margin: 0px;
+    margin: 0px; /* Removing default margin */
   }
 
-
-/* Default Background */ 
   body {
-    background-color: white;
+    background-color: #fffcfa; /* Default Background */ 
   }
 
+  section {
+    margin: 0px 10%;
+  }
 
 /*Fonts*/
   h1, h2, h3, h4 {
@@ -44,7 +43,7 @@
   h4 {
     color: var(--dark);
     font-size: 35px;
-    margin: 0px 0px;
+    margin-left: 10px;
     text-align: left;
   }
 
@@ -69,7 +68,7 @@
   }
 
 
-/* Nav Bar (Flexbox) */
+/* NAV BAR (FLEXBOX) */
   #navBar {
     background-color: white;
     display: flex;
@@ -130,7 +129,7 @@
     border-radius: 3px;
   }
 
-/* Top Banner (Flexbox) */
+/* TOP BANNER (FLEXBOX) */
   #top-banner {
     display: flex;
     justify-content: space-around;
@@ -164,12 +163,12 @@
   }
 
 
-/* About Me */
+/* ABOUT ME */
   .centred-paragraph {
     width: 50%;
     text-align: center;
     margin: auto;
-    padding: 10%;
+    padding: 5% 10%;
   }
 
   .centred-paragraph p {
@@ -177,7 +176,8 @@
   }
 
 
-/* Rules for all Grids */
+
+/* RULES FOR ALL GRIDS */
 
 #gridTitle {
   grid-area: gridTitle; 
@@ -188,230 +188,106 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  border-radius: 5px;
   margin: 10px;
   display: grid;
+  background-color: white;
 }
 
-    .gridText {
+.gridItem:hover {
+  opacity: 0.85;
+}
+
+    .gridTextBox {
       background-color: var(--slateGreen);
-      opacity: 0.8;
+      opacity: 0.9;
       border-bottom: 5px solid var(--orange);
+      border-radius: 0 0 5px 5px;
       padding: 15px;
       height: 45px;
       width: auto;
       align-self: end;
-      z-index: 0;
         h4 {
+          margin: 0;
           background-color: transparent;
           color: rgb(255, 255, 255, 1);
           font-weight: bold;
           font-family: 'Inter', sans-serif;
-          font-size: 20px;
+          font-size: 18px;
         }
         p {
           background-color: transparent;
           color: rgb(255, 255, 255, 1);
-          font-size: 16px;
+          font-size: 14px;
         }
     }
 
 
-/* Highlights (Grid) */ 
+/* HIGHLIGHTS (GRID) */ 
   #highlightsGrid {
-    margin: 30px 10%;
+    padding: 0;
     display: grid;
-    min-height: 1000px;
+    height: 1100px;
     grid-template-columns: 65% 35%;
-    grid-template-rows: auto 50% 50%;
+    grid-template-rows: 50% 50%;
     grid-template-areas: 
-    "gridTitle gridTitle"
     "highlight1 highlight1"
     "highlight2 highlight3";
   }
 
   #highlight1 {
     grid-area: highlight1;
-    background-color: var(--links);
+    background-image: url(../assets/images/sean-donnelly-learning-to-code.jpg);
   }
 
   #highlight2 {
     grid-area: highlight2;
-    background-color: var(--dark);
+    background-image: url(../assets/images/sean-donnelly-learning-to-code.jpg);
   }
 
   #highlight3{
+    background-image: url(../assets/images/sean-donnelly-learning-to-code.jpg);
     grid-area: highlight3;
-    background-color: var(--slateGreen);
   }
 
 
 
+/* MODULES (FLEXBOX) */
 
-
-
-
-
-
-
-/* Grid CSS-------- */
-#heroGrid {
-  margin: 0px 5%;
-  display: grid;
-  min-height: 500px;
-  height: 70vh;
-  grid-template-columns: 65% 35%;
-  grid-template-areas:
-}
-
-#featuredProduct {
-  grid-area: featuredProduct;
-  background-image: url("../images/furniture1.png");
-  background-color: maroon;
-
-}
-
-#secondaryProduct {
-  grid-area: secondaryProduct;
-  background-image: url("../images/furniture2.png");
-  background-color: grey;
-
-}
-
-#CTA {
-  background-color: salmon;
-  grid-area: CTA;
-  background-image: url("../images/woodbg.png");
-  justify-content: space-around;
-  cursor: pointer;
-}
-
-#headline {
-  background-color: rgba(255,255,255,0.8);
-  border-bottom: 5px solid #FF6200;
-  position: absolute;
-  right: -50px;
-  top: 100px;
-  padding: 25px;
-  max-width: 550px;
-  z-index: 100;
-}
-
-.heroGridArea {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  align-items: center;
-  display: flex;
-  position: relative;
-}
-
-/* Category Grid CSS */
-
-.subHeading {
-  text-align: center;
-  border-bottom: 2px solid black;
-  width: 300px;
-  margin: 50px auto;
-}
-
-#categoryGrid {
-  margin: 0px 5%;
-  display: grid;
-  grid-template-rows: 300px 300px 300px;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: 
-  "bookcases bedroom patio"
-  "couches couches patio"
-  "desks desks desks";
-}
-
-#bookcases {
-  background-color: red;
-  background-image: url(../images/bookcases.png);
-  grid-area: bookcases;
-}
-
-#bedroom {
-  background-color: blue;
-  background-image: url(../images/beds.png);
-  grid-area: bedroom;
-}
-
-#couches {
-  background-color: yellow;
-  background-image: url(../images/couch.png);
-  grid-area: couches;
-}
-
-#patio {
-  background-color: purple;
-  background-image: url(../images/patio.png);
-  grid-area: patio;
-}
-
-#desks {
-  background-color: greenyellow;
-  background-image: url(../images/desks.png);
-  grid-area: desks;
-}
-
-.categoryGridArea {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 5px;
-  cursor: pointer;
-  display: grid; 
-  align-content: end; 
-}
-
-.heading {
-  background-color: rgba(0,0,0,0.7);
-  padding: 15px;
-  height: 25px;
-  color: white;
-  font-size: 18px;
-  border-bottom: 5px solid #FF6200; 
+#modules {
+  margin: 70px 10%;
 }
 
 
 
-/* Media Query CSS */
+    .workCardRow {
+      display: flex;
+      justify-content: space-between;
+      height: 50vh;
+    }
+    
+    .workCard {
+      flex: 1;
+      border-radius: 5px;
+      align-content: end;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 5px;
+      margin: 10px;
+      display: grid;
+    }
 
-@media only screen and (max-width:1000px) {
+    .workCard:hover {
+      opacity: 0.85;
+    }
 
-  #navigation {
-    display: none;
+    
+  #placeholder {
+    background-image: url(../assets/images/placeholder-image.jpeg);
   }
 
-  .icons {
-    margin-left: auto;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  #headline {
-    position: static;
-    margin: 20px;
+  #jakesEatery {
+    background-image: url(../assets/images/jakes-eatery.png);
   }
 
-  #heroGrid {
-    grid-template-areas: 
-    "featuredProduct featuredProduct"
-    "secondaryProduct CTA"
-  }
-
-  #categoryGrid {
-    grid-template-rows: 300px 300px 300px 300px 300px;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-    "bookcases"
-    "bedroom"
-    "patio"
-    "couches"
-    "desks"
-
-  }
-
-
-}
