@@ -15,11 +15,13 @@
   }
 
   body {
-    background-color: #fffcfa; /* Default Background */ 
+    background-color: #faf4f1; /* Default Background */ 
+    padding-bottom: 200px;
   }
 
   section {
     margin: 0px 10%;
+    padding-top: 50px;
   }
 
 /*Fonts*/
@@ -37,13 +39,14 @@
     color: var(--dark);
     font-size: 35px;
     margin: 0px 0px;
+    margin-bottom: 15px;
     text-align: center;
   }
 
   h4 {
     color: var(--dark);
     font-size: 35px;
-    margin-left: 10px;
+    margin: 0px 0 20px 10px;
     text-align: left;
   }
 
@@ -146,7 +149,7 @@
 
   #banner-left-side h2, #banner-left-side p {
     margin-left: 10%;
-    margin-right: 5%;
+    margin-right: 10%;
   }
 
 
@@ -171,10 +174,7 @@
     padding: 5% 10%;
   }
 
-  .centred-paragraph p {
-    padding-top: 15px;
-  }
-
+ 
 
 
 /* RULES FOR ALL GRIDS */
@@ -188,6 +188,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: top;
   border-radius: 5px;
   margin: 10px;
   display: grid;
@@ -200,13 +201,16 @@
 
     .gridTextBox {
       background-color: var(--slateGreen);
-      opacity: 0.9;
+      opacity: 0.97;
       border-bottom: 5px solid var(--orange);
       border-radius: 0 0 5px 5px;
       padding: 15px;
-      height: 45px;
+      height: 55px;
       width: auto;
+      display: flex;
+      flex-direction: column;
       align-self: end;
+      justify-content: center;
         h4 {
           margin: 0;
           background-color: transparent;
@@ -227,26 +231,31 @@
   #highlightsGrid {
     padding: 0;
     display: grid;
-    height: 1100px;
+    height: 90vh;max-height: 800px;
     grid-template-columns: 65% 35%;
     grid-template-rows: 50% 50%;
-    grid-template-areas: 
+    background-position: top;
+    grid-template-areas:
     "highlight1 highlight1"
     "highlight2 highlight3";
   }
 
+  #highlight1, #highlight2, #highlight3 {
+    background-position: top;
+  }
+
   #highlight1 {
     grid-area: highlight1;
-    background-image: url(../assets/images/sean-donnelly-learning-to-code.jpg);
-  }
+    background-image: url(../assets/images/furniture-website.png);
+ }
 
   #highlight2 {
     grid-area: highlight2;
-    background-image: url(../assets/images/sean-donnelly-learning-to-code.jpg);
+    background-image: url(../assets/images/jakes-eatery.png);
   }
 
   #highlight3{
-    background-image: url(../assets/images/sean-donnelly-learning-to-code.jpg);
+    background-image: url(../assets/images/horiseon.png);
     grid-area: highlight3;
   }
 
@@ -270,7 +279,7 @@
       flex: 1;
       border-radius: 5px;
       align-content: end;
-      background-position: center;
+      background-position: top;
       background-size: cover;
       background-repeat: no-repeat;
       border-radius: 5px;
@@ -290,4 +299,14 @@
   #jakesEatery {
     background-image: url(../assets/images/jakes-eatery.png);
   }
+
+  #furnitureWebsite {
+    background-image: url(../assets/images/furniture-website.png);
+  }
+
+
+  #horiseon {
+    background-image: url(../assets/images/horiseon.png);
+  }
+
 
