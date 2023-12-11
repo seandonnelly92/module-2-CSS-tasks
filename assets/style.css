@@ -10,15 +10,21 @@
   --slateGreen: #363e36; 
 }
 
+/* Removing default margin */
+
+* {
+  margin: 0px;
+}
+
 /*Fonts*/
 
 h1, h2, h3, h4 {
-  font-family: Times, sans-serif;
+  font-family: 'Lilita One', sans-serif;
   color: var(--dark)
 }
 
 p {
-  font-family: Arial, sans-serif;
+  font-family: 'Inter', sans-serif;
   color: var(--slateGreen)
 }
 
@@ -28,18 +34,36 @@ p {
 }
 
 
-/* Grid CSS */
+/* Top Banner (Flexbox) */
+
+#top-banner {
+  display: flex;
+  background-color: red;
+  justify-content: space-around;
+  align-items: center;
+  height: 80vh;
+}
+
+#banner-left-side {
+}
+
+
+#banner-right-side {
+  background-image: url(../assets/images/sean-donnelly-learning-to-code.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+/* Grid CSS-------- */
 
 #heroGrid {
   margin: 0px 5%;
   display: grid;
   min-height: 500px;
   height: 70vh;
-  grid-template-rows: 75% 25%;
-  grid-template-columns: 75% 25%;
+  grid-template-columns: 65% 35%;
   grid-template-areas:
-  "featuredProduct secondaryProduct"
-  "featuredProduct CTA";
 }
 
 #featuredProduct {
