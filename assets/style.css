@@ -71,6 +71,13 @@
   }
 
 
+
+
+
+
+
+
+
 /* NAV BAR (FLEXBOX) */
   #navBar {
     background-color: white;
@@ -119,6 +126,7 @@
     color: var(--slateGreen);
     text-decoration: none;
     font-size: 14px;
+    display: inline-block
   }
 
   .btn1 {
@@ -178,10 +186,6 @@
 
 
 /* RULES FOR ALL GRIDS */
-
-#gridTitle {
-  grid-area: gridTitle; 
-}
 
 .gridItem {
   align-content: end;
@@ -310,3 +314,177 @@
   }
 
 
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERY */
+
+/* Mid Screen Size */ 
+
+@media (max-width:1000px) { 
+  #navigation a:not(#navContactBtn) {
+    display: none;
+  }
+
+h2 {
+  font-size: 45px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 30px;
+}
+
+p {
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  color: var(--slateGreen)
+}
+
+
+
+
+  .gridTextBox {
+     h4 {
+        font-size: 14px;
+        };
+     p {
+          font-size: 12px;
+          };
+     padding: 15px;
+     height: 30px;
+   }
+
+
+  #highlightsGrid {
+    height: 70vh;
+    max-height: 800px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    background-position: top;
+    grid-template-areas:
+    "highlight1 highlight1"
+    "highlight2 highlight3";
+  }
+
+  .workCardRow {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 1000px;
+  }
+
+  .workCard {
+    height: 800px;
+    width: auto;  
+  }
+  
+}
+
+
+/* Mobile */ 
+
+@media (max-width: 600px) {
+
+
+  #top-banner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50vh;
+    margin-top: 20px;
+    padding: 0 0 20px 0;
+  }
+
+
+#banner-right-side {
+    background-image: url(../assets/images/sean-donnelly-learning-to-code-closer.jpg);
+    height: 100%;
+    border-radius: 0 0 15px 15px;
+    margin-right: 3%;
+  }
+
+
+
+
+  h2 {
+    font-size: 30px;
+  }
+  
+  h3 {
+    font-size: 20px;
+  }
+  
+  h4 {
+    font-size: 20px;
+  }
+  
+  p {
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    color: var(--slateGreen)
+  }
+
+
+  #highlightsGrid {
+    height: 70vh;
+    min-height: 800px;
+    grid-template-columns: 100%;
+    grid-template-rows: 33% 33% 33%;
+    background-position: top;
+    grid-template-areas:
+    "highlight1"
+    "highlight2" 
+    "highlight3"
+  }
+
+
+
+
+
+}
+
+
+
+
+
+/*
+@media only screen and (max-width: 600px) {
+  #headline {
+    position: static;
+    margin: 20px;
+  }
+
+  #navigation {
+    display: none;
+  }
+
+  #heroGrid {
+    grid-template-areas: 
+    "featuredProduct featuredProduct"
+    "secondaryProduct CTA"
+  }
+
+  #categoryGrid {
+    grid-template-rows: 300px 300px 300px 300px 300px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "bookcases"
+    "bedroom"
+    "patio"
+    "couches"
+    "desks"
+
+  }
+}
+
+*/
