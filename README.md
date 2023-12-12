@@ -64,6 +64,8 @@ Thank you to https://coolors.co/ for the colour palette.
 
 Thank you to Kevin Powell for [this helpful YouTube video](https://www.youtube.com/watch?v=2KL-z9A56SQ&amp;ab_channel=KevinPowell&ab_channel=KevinPowell) on Media Queries which was a useful reminder.
 
+Thank you to https://realfavicongenerator.net/ for guidance on creating a favicon and for converting my image into multiple favicon files. 
+
 ## License
 
 MIT License
