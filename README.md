@@ -1,4 +1,4 @@
-_This project was created for module 1 of the Front End Development bootcamp. In this challenge, we were tasked with refactoring code to make it more accessible for a fictional digital consultancy called Horiseon._
+_This project was created for module 2 of the EdX Skills for Life Front End Development bootcamp. In this challenge, we were tasked with creating a portfolio page with certain features to practise and showcase our skills and projects so far._
 
 
 # Sean's Porftolio Project
