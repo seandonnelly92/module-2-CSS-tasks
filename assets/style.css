@@ -1,4 +1,4 @@
-/* GENERAL RULES /* 
+/* ---------------- GENERAL RULES ---------------- /* 
 
 /* Colour Palette (Variables) */
   :root { 
@@ -71,13 +71,7 @@
 
 
 
-
-
-
-
-
-
-/* NAV BAR (FLEXBOX) */
+/* ---------------- NAV BAR (FLEXBOX) ---------------- */
   #navBar {
     background-color: white;
     display: flex;
@@ -143,7 +137,9 @@
     background-color: var(--hover-links)
   }
 
-/* TOP BANNER (FLEXBOX) */
+
+
+/* ---------------- TOP BANNER (FLEXBOX) ---------------- */
   #top-banner {
     display: flex;
     justify-content: space-around;
@@ -177,7 +173,7 @@
   }
 
 
-/* ABOUT ME */
+/*  ---------------- ABOUT ME  ----------------  */
   .centred-paragraph {
     width: 50%;
     text-align: center;
@@ -185,10 +181,9 @@
     padding: 5% 10%;
   }
 
- 
 
 
-/* RULES FOR ALL GRIDS */
+/* ---------------- RULES FOR ALL GRIDS ---------------- */
 
 .gridItem {
   align-content: end;
@@ -234,7 +229,7 @@
     }
 
 
-/* HIGHLIGHTS (GRID) */ 
+/*  ---------------- HIGHLIGHTS (GRID) ---------------- */ 
   #highlightsGrid {
     padding: 0;
     display: grid;
@@ -268,7 +263,7 @@
 
 
 
-/* MODULES (FLEXBOX) */
+/*  ---------------- MODULES (FLEXBOX) ----------------  */
 
 #modules {
   margin: 70px 10%;
@@ -318,10 +313,7 @@
 
 
 
-
-
-
-/* FOOTER */ 
+/* ---------------- FOOTER ---------------- */ 
 
 #footer {
   background-color: var(--slateGreen);
@@ -349,10 +341,7 @@
 } 
 
 
-
-
-
-/* MEDIA QUERIES */
+/*  ---------------- MEDIA QUERIES ---------------- */
 
 /* Mid Screen Size */ 
 
