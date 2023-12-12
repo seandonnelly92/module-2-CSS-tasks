@@ -16,7 +16,6 @@
 
   body {
     background-color: #faf4f1; /* Default Background */ 
-    padding-bottom: 200px;
   }
 
   section {
@@ -197,6 +196,7 @@
   margin: 10px;
   display: grid;
   background-color: white;
+  border: solid 0.75px var(--slateGreen);
 }
 
 .gridItem:hover {
@@ -205,8 +205,7 @@
 
     .gridTextBox {
       background-color: var(--slateGreen);
-      opacity: 0.97;
-      border-bottom: 5px solid var(--orange);
+      opacity: 1;
       border-radius: 0 0 5px 5px;
       padding: 15px;
       height: 55px;
@@ -271,8 +270,6 @@
   margin: 70px 10%;
 }
 
-
-
     .workCardRow {
       display: flex;
       justify-content: space-between;
@@ -286,6 +283,7 @@
       background-position: top;
       background-size: cover;
       background-repeat: no-repeat;
+      border: solid 0.75px var(--slateGreen);
       border-radius: 5px;
       margin: 10px;
       display: grid;
@@ -319,11 +317,42 @@
 
 
 
+/* FOOTER */ 
+
+#footer {
+  background-color: var(--slateGreen);
+  width: 100%;
+  height: auto; 
+  display: flex;
+  flex-direction: columns;
+  padding: 30px 10% 200px 10%;
+
+}
+
+.footer-items h4, .footer-items a, .footer-items p {
+  color: white;
+  padding-top: 15px;
+  margin: 0;
+}
+
+
+.footer-items {
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  text-decoration: none;
+  display: block;
+} 
 
 
 
 
-/* MEDIA QUERY */
+
+
+
+
+
+/* MEDIA QUERIES */
 
 /* Mid Screen Size */ 
 
@@ -413,15 +442,14 @@ p {
     margin-right: 3%;
   }
 
-
-
-
   h2 {
     font-size: 30px;
   }
   
   h3 {
     font-size: 20px;
+    margin-left: 0px;
+
   }
   
   h4 {
@@ -434,6 +462,12 @@ p {
     color: var(--slateGreen)
   }
 
+  .centred-paragraph {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    padding: 5% 10%;
+  }
 
   #highlightsGrid {
     height: 70vh;
@@ -448,43 +482,10 @@ p {
   }
 
 
-
-
+  .footer-items {
+    font-size: 12px; 
+  } 
 
 }
 
 
-
-
-
-/*
-@media only screen and (max-width: 600px) {
-  #headline {
-    position: static;
-    margin: 20px;
-  }
-
-  #navigation {
-    display: none;
-  }
-
-  #heroGrid {
-    grid-template-areas: 
-    "featuredProduct featuredProduct"
-    "secondaryProduct CTA"
-  }
-
-  #categoryGrid {
-    grid-template-rows: 300px 300px 300px 300px 300px;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-    "bookcases"
-    "bedroom"
-    "patio"
-    "couches"
-    "desks"
-
-  }
-}
-
-*/
