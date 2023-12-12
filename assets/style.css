@@ -376,7 +376,10 @@ p {
 }
 
 
-
+#top-banner {
+  height: 50vh;
+  padding: 30px 0 30px 0;
+}
 
   .gridTextBox {
      h4 {
@@ -422,12 +425,8 @@ p {
 
 
   #top-banner {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 50vh;
-    margin-top: 20px;
-    padding: 0 0 20px 0;
+    height: 30vh;
+    padding: 30px 0 30px 0;
   }
 
 
